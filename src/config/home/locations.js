@@ -28,7 +28,7 @@ const locations = {
       image: {
         alt: 'Capitol Hill Eltana',
         height: '140',
-        // local image stored in public/assets
+        // local image stored in public/assets (size in pixels must be identical to the location below)
         src: '/assets/capitol-hill.jpg',
       },
       buttons: [
@@ -62,7 +62,7 @@ const locations = {
       image: {
         alt: 'Stone Way Eltana',
         height: '140',
-        // local image stored in public/assets
+        // local image stored in public/assets (size in pixels must be identical to the location above)
         src: '/assets/stoneway.jpg',
       },
       buttons: [
