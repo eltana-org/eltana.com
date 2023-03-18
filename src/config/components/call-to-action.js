@@ -1,31 +1,34 @@
 // Configuration for the site wide call to action
 // This component config can be used on any page to display an identical call to action
 
+// ----------- imports -----------
+import { getPermalink } from '~/utils/permalinks';
+// ----------- imports -----------
+
 const callToAction = {
   // If the call to action should be displayed
   enabled: true,
 
   // The title of the call to action component
-  title: 'Astro + Tailwind CSS',
+  title: 'About Eltana',
 
   // The subtitle of the call to action component (supports HTML)
-  subtitle: `Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-    waste more time! :P`,
+  subtitle: `Click the link below to learn more about Eltana, our culture, and our history!`,
 
   // Button configuration for the call to action component
   button: {
     // If the button should be displayed
     enabled: true,
     // The text of the button
-    text: 'Get template',
+    text: 'About',
     // The link of the button
-    href: 'https://github.com/grantbirki/astrowind',
+    href: getPermalink('/about'),
     // The icon to the left of the button text
-    icon: 'tabler:download',
+    icon: 'tabler:bulb',
     // HTML target attribute
-    target: '_blank',
+    target: '_self',
     // HTML rel attribute
-    rel: 'noopener',
+    rel: [],
   },
 };
 
