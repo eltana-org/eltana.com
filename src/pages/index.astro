@@ -143,18 +143,6 @@ const meta = {
     )
   }
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  {
-    featuredPosts && featuredPosts.enabled && (
-      <LatestPosts
-        title={featuredPosts.title}
-        information={featuredPosts.information}
-        postIds={featuredPosts.postIds}
-      />
-    )
-  }
-
   <!-- FAQs Widget ******************* -->
 
   {
@@ -228,6 +216,18 @@ const meta = {
         title={locations.title}
         subtitle={locations.subtitle}
         locations={locations.locations}
+      />
+    )
+  }
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  {
+    featuredPosts && featuredPosts.enabled && (
+      <LatestPosts
+        title={featuredPosts.title}
+        information={featuredPosts.information}
+        postIds={featuredPosts.postIds}
       />
     )
   }
