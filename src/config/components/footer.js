@@ -30,7 +30,7 @@ const footerData = {
     },
     {
       title: 'Programs',
-      links: [{ text: 'Hidden36', href: getPermalink('/hidden36') }],
+      links: [{ text: 'Hidden36', href: 'https://www.hidden36.com/' }],
     },
   ],
 
