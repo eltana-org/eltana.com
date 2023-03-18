@@ -1,15 +1,15 @@
 ---
 publishDate: 2023-01-08T00:00:00Z
-title: AstroWind template in depth
+title: Example Post 1
 description: Lorem ipsum dolor sit amet
 excerpt: Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas
-image: ~/assets/images/stickers.jpg
-category: Tutorials
+image: ~/assets/images/capitol-hill.jpg
+category: Story
 tags:
-  - astro
-  - tailwind css
-  - front-end
-canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  - story
+  - seattle
+canonical: https://eltana.com/example-post-1
+draft: false # will be published right away
 ---
 
 ## Dictum integer fusce ac ridiculus et odio sollicitudin diam at
