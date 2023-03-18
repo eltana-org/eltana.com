@@ -24,6 +24,7 @@ import faqs from '~/config/home/faqs';
 import features from '~/config/home/features';
 import features2 from '~/config/home/features2';
 import callToAction from '~/config/components/call-to-action';
+import neighborhoodDelivery from '~/config/home/neighborhood-delivery';
 import stats from '~/config/home/stats';
 import locations from '~/config/home/locations';
 
@@ -193,6 +194,25 @@ const meta = {
       icon: 'tabler:clock',
     }}
   />
+
+  <!-- CallToAction Widget *********** -->
+  {
+    neighborhoodDelivery && neighborhoodDelivery.enabled && (
+      <CallToAction
+        callToAction={{
+          enabled: neighborhoodDelivery.button.enabled,
+          text: neighborhoodDelivery.button.text,
+          href: neighborhoodDelivery.button.href,
+          icon: neighborhoodDelivery.button.icon,
+          rel: neighborhoodDelivery.button.rel,
+          target: neighborhoodDelivery.button.target,
+        }}
+      >
+        <Fragment slot="title" set:html={neighborhoodDelivery.title} />
+        <Fragment slot="subtitle" set:html={neighborhoodDelivery.subtitle} />
+      </CallToAction>
+    )
+  }
 
   <!-- Stats Widget ****************** -->
 
