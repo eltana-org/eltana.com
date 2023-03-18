@@ -1,6 +1,7 @@
 ---
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -165,30 +166,30 @@ const meta = {
 
   <Block
     enabled={true}
-    title={'Example Text Block'}
-    subtitle={'This is an example of a text block'}
-    highlight={'Block'}
-    content={'In a text block you can add any content you want. This could be a description about something, a quote, or other details. With this component you can optionally add an image and call to action buttons.'}
+    title={'Order Online!'}
+    subtitle={'Place your order online'}
+    highlight={'Online'}
+    content={'Eltana now offers different options for you to order online. You can place a same day order which is delivered by a service such as Uber Eats, you can schedule an order (24 hours in advance) for  pick-up / delivery, or you can participate in our neighborhood delivery program.'}
     image={{
-      enabled: true,
-      src: import('~/assets/images/hero.jpg'),
-      alt: 'alt text here',
+      enabled: false,
+      src: null,
+      alt: 'eltana online order',
     }}
     callToAction={{
       enabled: true,
-      text: 'Button 1',
-      href: 'https://www.google.com',
-      target: '_blank',
-      rel: 'noopener',
-      icon: 'tabler:star',
+      text: 'Today',
+      href: getPermalink('/same-day-delivery'),
+      target: '_self',
+      rel: [],
+      icon: 'tabler:bolt',
     }}
     callToAction2={{
       enabled: true,
-      text: 'Button 2',
-      href: 'https://www.google.com',
-      target: '_blank',
-      rel: 'noopener',
-      icon: 'tabler:star',
+      text: 'Scheduled +24hr',
+      href: getPermalink('/order'),
+      target: '_self',
+      rel: [],
+      icon: 'tabler:clock',
     }}
   />
 

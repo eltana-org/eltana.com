@@ -1,5 +1,9 @@
 // Hero configuration on the homepage
 
+// ----------- imports -----------
+import { getPermalink } from '~/utils/permalinks';
+// ----------- imports -----------
+
 const hero = {
   // If the entire hero section should be enabled or not
   enabled: true,
@@ -22,17 +26,17 @@ const hero = {
   // First CTA block
   callToAction: {
     // Enable or disable first CTA
-    enabled: false,
+    enabled: true,
     // CTA text
-    text: 'Get template',
+    text: 'Menu',
     // CTA link
-    href: 'https://github.com/grantbirki/astrowind',
+    href: getPermalink('/menu'),
     // Target html <a> tag
-    target: '_blank',
+    target: '_self',
     // Rel html <a> tag
-    rel: 'noopener',
+    rel: [],
     // CTA icon
-    icon: 'tabler:download',
+    icon: 'tabler:clipboard',
   },
 
   // Second CTA block (optional)

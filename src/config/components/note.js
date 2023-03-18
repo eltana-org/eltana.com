@@ -5,12 +5,12 @@ const note = {
   enabled: true,
 
   // Note text with HTML support
-  text: `<span class="font-bold">Philosophy:</span> Simplicity, Best Practices and High Performance`,
+  text: `<span class="font-bold">About:</span> Wood-Fired bagels, coffee, and more in Seattle, WA.`,
 
   // Optional note icon (prefix to the text)
   icon: {
     enabled: true,
-    name: 'tabler:star',
+    name: 'tabler:coffee',
   },
 };
 
