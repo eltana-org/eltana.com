@@ -5,7 +5,7 @@ const locations = {
   enabled: true,
 
   // Small highlight text at the top of the component
-  highlight: 'Physical Locations',
+  highlight: `Eltana's Locations`,
 
   // Main title text
   title: 'Locations',
@@ -28,7 +28,8 @@ const locations = {
       image: {
         alt: 'Capitol Hill Eltana',
         height: '140',
-        src: 'https://images.unsplash.com/photo-1678986992005-87c3f4a2b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60',
+        // local image stored in public/assets
+        src: '/assets/capitol-hill.jpg',
       },
       buttons: [
         {
@@ -61,7 +62,8 @@ const locations = {
       image: {
         alt: 'Stone Way Eltana',
         height: '140',
-        src: 'https://images.unsplash.com/photo-1678986992005-87c3f4a2b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60',
+        // local image stored in public/assets
+        src: '/assets/stoneway.jpg',
       },
       buttons: [
         {
