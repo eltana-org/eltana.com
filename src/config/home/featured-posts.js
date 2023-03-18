@@ -2,7 +2,7 @@
 
 const featuredPosts = {
   // Whether the component is enabled or not
-  enabled: true,
+  enabled: false,
 
   // The title of the component
   title: 'Find out more content in our Blog',

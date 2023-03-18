@@ -2,7 +2,7 @@
 
 const faqs = {
   // If the faqs component should be enabled or not on the homepage
-  enabled: true,
+  enabled: false,
 
   // highlight text for the faqs component
   highlight: 'FAQs',

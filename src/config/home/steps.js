@@ -2,7 +2,7 @@
 
 const steps = {
   // Whether the component is enabled or not
-  enabled: true,
+  enabled: false,
 
   // The title text of the component
   title: 'Get your dream website up and running in no time with AstroWind.',
@@ -35,7 +35,7 @@ const steps = {
 
   // The image to be displayed on the right side of the component
   image: {
-    src: import('~/assets/images/creativity.jpg'),
+    src: import('~/assets/images/hero.jpg'),
     alt: 'Steps image',
   },
 };

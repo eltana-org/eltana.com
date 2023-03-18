@@ -2,7 +2,7 @@
 
 const stats = {
   // If the stats component should be displayed
-  enabled: true,
+  enabled: false,
 
   // The items in the stats component
   items: [

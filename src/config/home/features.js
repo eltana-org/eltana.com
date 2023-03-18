@@ -2,7 +2,7 @@
 
 const features = {
   // If the features component should be enabled or not on the homepage
-  enabled: true,
+  enabled: false,
 
   // highlight text for the features component
   highlight: 'Features',

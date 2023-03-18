@@ -2,7 +2,7 @@
 
 const content = {
   // If the entire content component should be enabled
-  enabled: true,
+  enabled: false,
 
   // Configuration for the primary section of the content component (the first and larger section)
   primary: {
@@ -46,7 +46,7 @@ const content = {
       // Alt text for the image
       alt: 'Colorful Image',
       // The image to be displayed
-      src: import('~/assets/images/caos.jpg'),
+      src: import('~/assets/images/hero.jpg'),
     },
   },
 
@@ -84,7 +84,7 @@ const content = {
       // Alt text for the image
       alt: 'Vintage Image',
       // The image to be displayed
-      src: import('~/assets/images/vintage.jpg'),
+      src: import('~/assets/images/hero.jpg'),
     },
   },
 };

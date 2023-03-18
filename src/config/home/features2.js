@@ -2,7 +2,7 @@
 
 const features2 = {
   // If the features2 section should be displayed
-  enabled: true,
+  enabled: false,
 
   // The title of the features2 section
   title: 'Most used widgets',
