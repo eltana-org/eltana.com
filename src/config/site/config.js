@@ -17,7 +17,8 @@ const CONFIG = {
   title: 'Eltana | Wood-Fired Bagel Cafe | Seattle, WA',
 
   // Website description
-  description: 'Wood-fired bagel cafe located in the neighborhoods of Seattle, WA. Bagels, Breakfast, Coffee, and more!',
+  description:
+    'Wood-fired bagel cafe located in the neighborhoods of Seattle, WA. Bagels, Breakfast, Coffee, and more!',
 
   // The website's preview image that is displayed when sharing the website on social media
   defaultImage: defaultImage,
