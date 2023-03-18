@@ -1,0 +1,231 @@
+---
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Block from '~/components/widgets/Block.astro';
+import Locations from '~/components/widgets/Locations.jsx';
+
+import hero from '~/config/home/hero';
+import content from '~/config/home/content';
+import featuredPosts from '~/config/home/featured-posts';
+import steps from '~/config/home/steps';
+import faqs from '~/config/home/faqs';
+import features from '~/config/home/features';
+import features2 from '~/config/home/features2';
+import callToAction from '~/config/components/call-to-action';
+import stats from '~/config/home/stats';
+import locations from '~/config/home/locations';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  {
+    hero && hero.enabled && (
+      <Hero
+        callToAction={{
+          enabled: hero.callToAction.enabled,
+          text: hero.callToAction.text,
+          href: hero.callToAction.href,
+          target: hero.callToAction.target,
+          rel: hero.callToAction.rel,
+          icon: hero.callToAction.icon,
+        }}
+        callToAction2={{
+          enabled: hero.callToAction2.enabled,
+          text: hero.callToAction2.text,
+          href: hero.callToAction2.href,
+          target: hero.callToAction2.target,
+          rel: hero.callToAction2.rel,
+          icon: hero.callToAction2.icon,
+        }}
+        image={{ enabled: hero.image.enabled, src: hero.image.src, alt: hero.image.alt }}
+      >
+        {hero.title.enabled && <Fragment slot="title" set:html={hero.title.text} />}
+
+        {hero.subtitle.enabled && <Fragment slot="subtitle" set:html={hero.subtitle.text} />}
+      </Hero>
+    )
+  }
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget *************** -->
+
+  {
+    features && features.enabled && (
+      <Features
+        highlight={features.highlight}
+        title={features.title}
+        subtitle={features.subtitle}
+        items={features.items}
+      />
+    )
+  }
+
+  <!-- Content Widget **************** -->
+  {
+    content && content.enabled && (
+      <>
+        <Content
+          highlight={content.primary.highlight}
+          title={content.primary.title}
+          items={content.primary.items}
+          image={{
+            src: content.primary.image.src,
+            alt: content.primary.image.alt,
+            enabled: content.primary.image.enabled,
+          }}
+        >
+          <Fragment slot="content" set:html={content.primary.description} />
+        </Content>
+        {content.secondary.enabled && (
+          <Content
+            isReversed
+            isAfterContent
+            items={content.secondary.items}
+            image={{
+              src: content.secondary.image.src,
+              alt: content.secondary.image.alt,
+              enabled: content.secondary.image.enabled,
+            }}
+          />
+        )}
+      </>
+    )
+  }
+
+  <!-- Steps Widget ****************** -->
+
+  {
+    steps && steps.enabled && (
+      <Steps
+        title={steps.title}
+        items={steps.items}
+        image={{
+          src: steps.image.src,
+          alt: steps.image.alt,
+        }}
+      />
+    )
+  }
+
+  <!-- Features2 Widget ************** -->
+
+  {
+    features2 && features2.enabled && (
+      <Features2
+        title={features2.title}
+        subtitle={features2.subtitle}
+        highlight={features2.highlight}
+        items={features2.items}
+      />
+    )
+  }
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  {
+    featuredPosts && featuredPosts.enabled && (
+      <LatestPosts
+        title={featuredPosts.title}
+        information={featuredPosts.information}
+        postIds={featuredPosts.postIds}
+      />
+    )
+  }
+
+  <!-- FAQs Widget ******************* -->
+
+  {
+    faqs && faqs.enabled && (
+      <FAQs title={faqs.title} subtitle={faqs.subtitle} highlight={faqs.highlight} items={faqs.items} />
+    )
+  }
+
+  <!-- Block Widget ****************** -->
+
+  <Block
+    enabled={true}
+    title={'Example Text Block'}
+    subtitle={'This is an example of a text block'}
+    highlight={'Block'}
+    content={'In a text block you can add any content you want. This could be a description about something, a quote, or other details. With this component you can optionally add an image and call to action buttons.'}
+    image={{
+      enabled: true,
+      src: import('~/assets/images/hero.png'),
+      alt: 'alt text here',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'Button 1',
+      href: 'https://www.google.com',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:star',
+    }}
+    callToAction2={{
+      enabled: true,
+      text: 'Button 2',
+      href: 'https://www.google.com',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:star',
+    }}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  {stats && stats.enabled && <Stats items={stats.items} />}
+
+  <!-- Locations Widget ****************** -->
+
+  {
+    locations && locations.enabled && locations.locations.length > 0 && (
+      <Locations
+        client:only="react"
+        highlight="Physical Locations"
+        title="Locations"
+        subtitle="Drop in and see us at one of our locations."
+        locations={locations.locations}
+      />
+    )
+  }
+
+  <!-- CallToAction Widget *********** -->
+  {
+    callToAction && callToAction.enabled && (
+      <CallToAction
+        callToAction={{
+          enabled: callToAction.button.enabled,
+          text: callToAction.button.text,
+          href: callToAction.button.href,
+          icon: callToAction.button.icon,
+          rel: callToAction.button.rel,
+          target: callToAction.button.target,
+        }}
+      >
+        <Fragment slot="title" set:html={callToAction.title} />
+        <Fragment slot="subtitle" set:html={callToAction.subtitle} />
+      </CallToAction>
+    )
+  }
+</Layout>
