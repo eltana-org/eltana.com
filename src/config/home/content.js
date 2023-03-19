@@ -13,7 +13,7 @@ const content = {
     highlight: 'Yummm',
 
     // Main title text of the primary content component
-    title: 'What does Eltana have in store?',
+    title: 'Eltana Bagels',
 
     // Main description text of the primary content component (HTML supported)
     description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Delicious Montreal Style Bagels</h3>
@@ -54,8 +54,8 @@ const content = {
     // If the secondary section should be enabled
     enabled: true,
 
-    title: 'Coffee',
-    highlight: 'Coffee',
+    title: 'Locally Roasted Coffee',
+    highlight: 'The Brew',
     description:
       'We serve a variety of coffee drinks, including lattes, cappuccinos, and espresso shots. We also serve a variety of teas, including chai and green tea.',
 
