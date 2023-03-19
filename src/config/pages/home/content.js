@@ -56,28 +56,30 @@ const content = {
 
     title: 'Locally Roasted Coffee',
     highlight: 'The Brew',
-    description:
-      'We serve a variety of coffee drinks, including lattes, cappuccinos, and espresso shots. We also serve a variety of teas, including chai and green tea.',
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">BioWilly's Beans</h3>
+    Coffee With A Conscience - From seed to cup, <a class="text-amber-600 hover:underline dark:text-gray-200" target="_blank" href="https://biowillysbeans.com/">BioWilly's Beans</a> are grown, processed, and roasted to meet a premium coffee standard. Eltana is proud to serve BioWilly's Beans, a local coffee roaster that is committed to sustainability and social responsibility.`,
 
     // Items to be displayed in the secondary section
     items: [
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Roasted sustainably',
+        icon: 'tabler:plant',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: 'Sourced from all major coffee growing regions',
+        icon: 'tabler:globe',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'Fair trade and organic',
+        icon: 'tabler:scale',
       },
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Roasted locally in Seattle',
+        icon: 'tabler:pin',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'Delicious',
+        icon: 'tabler:coffee',
       },
     ],
 
