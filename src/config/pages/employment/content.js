@@ -52,29 +52,17 @@ const content = {
   // Configuration for the secondary section of the content component (the second and smaller section)
   secondary: {
     // If the secondary section should be enabled
-    enabled: false,
+    enabled: true,
+
+    title: 'Jewish Philosophy',
+
+    // highlight: 'What We Believe',
+
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About Our Jewish Roots</h3>
+    We are taking an approach that pays homage to the history of bagels as a baked good predominantly produced by Jewish bakers but reinterprets the idea of a "Jewish" company in a way that fits our world today — this place and this time. For thousands of years Jewish teachers and philosophers have attempted to unravel the timeless questions of how to be a better parent, teacher, friend, partner, employer and person. They've been nice enough to write down their attempts at answers and to revise their predecessors' efforts. The result is a lot of good thinking. We want to integrate this tradition into a popular, delicious and inclusive experience. Jewish insights into hospitality, intentional eating, and community dynamics inform everything from our ingredients, sourcing and food production to customer service and employee relationships, as well as our operating principles and venue design. We believe that these values resonate universally, and will draw employees and customers of all religious, cultural, and generational backgrounds.`,
 
     // Items to be displayed in the secondary section
-    items: [
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ],
+    items: [],
 
     // Configuration for the image to be displayed in the secondary section
     image: {
@@ -83,7 +71,7 @@ const content = {
       // Alt text for the image
       alt: 'Vintage Image',
       // The image to be displayed
-      src: import('~/assets/images/hero.jpg'),
+      src: import('~/assets/images/hebrew.svg'),
     },
   },
 };

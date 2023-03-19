@@ -144,13 +144,17 @@ const meta = {
           <Content
             isReversed
             isAfterContent
+            highlight={content.secondary.highlight}
+            title={content.secondary.title}
             items={content.secondary.items}
             image={{
               src: content.secondary.image.src,
               alt: content.secondary.image.alt,
               enabled: content.secondary.image.enabled,
             }}
-          />
+          >
+            <Fragment slot="content" set:html={content.secondary.description} />
+          </Content>
         )}
       </>
     )
