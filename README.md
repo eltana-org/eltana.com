@@ -13,10 +13,10 @@ Here are a few common config directories and what you will find there:
 - [`src/config/site/*`](src/config/site) - Site configuration
   - [`config.js`](src/config/site/config.js) - Global site configuration
   - [`blog.js`](src/config/site/blog.js) - Blog configuration
-- [`src/config/home/*`](src/config/home) - Home page configuration
-  - [`featured-posts.js`](src/config/home/featured-posts.js) - Featured blog posts on the home page
-  - [`hero.js`](src/config/home/hero.js) - Hero component configuration on the home page
-  - [`content.js`](src/config/home/content.js) - Main content component configuration on the home page
+- [`src/config/pages/home/*`](src/config/pages/home) - Home page configuration
+  - [`featured-posts.js`](src/config/pages/home/featured-posts.js) - Featured blog posts on the home page
+  - [`hero.js`](src/config/pages/home/hero.js) - Hero component configuration on the home page
+  - [`content.js`](src/config/pages/home/content.js) - Main content component configuration on the home page
 - [`src/config/components/*`](src/config/components) - Component configuration
   - [`announcement.js`](src/config/components/announcement.js) - Announcement component configuration on all pages
   - [`footer.js`](src/config/components/footer.js) - Footer component configuration on all pages
