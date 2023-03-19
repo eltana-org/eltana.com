@@ -18,6 +18,15 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
 <!DOCTYPE html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=UA-123165292-1"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-123165292-1');
+    </script>
     <MetaTags {...meta} />
   </head>
 
