@@ -10,21 +10,21 @@ const callToAction = {
   enabled: true,
 
   // The title of the call to action component
-  title: 'About Eltana',
+  title: 'Looking to Schedule a Delivery or Pick-Up?',
 
   // The subtitle of the call to action component (supports HTML)
-  subtitle: `Click the link below to learn more about Eltana, our culture, and our history!`,
+  subtitle: `Checkout our order page to schedule a delivery or pick-up for a later date. We support catering and bulk orders as well!`,
 
   // Button configuration for the call to action component
   button: {
     // If the button should be displayed
     enabled: true,
     // The text of the button
-    text: 'About',
+    text: 'Schedule a Delivery or Pick-Up',
     // The link of the button
-    href: getPermalink('/about'),
+    href: getPermalink('/order'),
     // The icon to the left of the button text
-    icon: 'tabler:bulb',
+    icon: 'tabler:truck-delivery',
     // HTML target attribute
     target: '_self',
     // HTML rel attribute

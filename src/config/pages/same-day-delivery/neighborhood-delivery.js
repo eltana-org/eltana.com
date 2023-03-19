@@ -6,7 +6,7 @@ const neighborhoodDelivery = {
   enabled: true,
 
   // The title of the call to action component
-  title: 'Neighborhood Delivery',
+  title: 'Looking for Neighborhood Delivery?',
 
   // The subtitle of the call to action component (supports HTML)
   subtitle: `Join our Neighborhood Delivery program and get your favorite bagels delivered to your door.`,
