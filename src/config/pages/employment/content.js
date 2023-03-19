@@ -2,7 +2,7 @@
 
 const content = {
   // If the entire content component should be enabled
-  enabled: false,
+  enabled: true,
 
   // Configuration for the primary section of the content component (the first and larger section)
   primary: {
@@ -10,32 +10,28 @@ const content = {
     enabled: true,
 
     // Small highlight text to go above the title
-    highlight: 'Inside template',
+    highlight: `What We're About`,
 
     // Main title text of the primary content component
-    title: "And what's inside? ...",
+    title: `Culture & Values`,
 
     // Main description text of the primary content component (HTML supported)
-    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-    Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit
-    te euismod tacimates.`,
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Eltana's People and Culture</h3>
+    Eltana takes a unique approach to business (and hiring), which requires a little explaining. Our culture and brand is based on the practical interpersonal wisdom developed by Jewish philosophers and teachers over thousands of years. That doesn’t mean you have to be Jewish to work at Eltana. We are equal opportunity employers and looking to hire a diverse group of people who reflect the traits we admire most in our employees. Specifically:`,
 
     // The items to be displayed in the primary section
     items: [
       {
-        title: 'Per ei quaeque sensibus',
-        description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        title: 'Candor',
+        description: 'People who are comfortable being direct and honest',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        title: 'Efficiency',
+        description: 'Excited by finding smarter and more effective ways of doing things',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        title: 'Generosity of Spirit',
+        description: 'Assume the best in people and tend to give others the benefit of the doubt',
       },
     ],
 
@@ -53,7 +49,7 @@ const content = {
   // Configuration for the secondary section of the content component (the second and smaller section)
   secondary: {
     // If the secondary section should be enabled
-    enabled: true,
+    enabled: false,
 
     // Items to be displayed in the secondary section
     items: [
