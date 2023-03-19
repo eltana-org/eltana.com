@@ -12,8 +12,9 @@ const footerData = {
       title: 'Order',
       // List of links to be displayed in the section
       links: [
-        { text: 'Ordering', href: getPermalink('/order') },
+        { text: 'Catering', href: getPermalink('/order') },
         { text: 'Menu', href: getPermalink('/menu') },
+        { text: 'Same Day Delivery', href: getPermalink('/same-day-delivery') },
       ],
     },
     {
@@ -30,7 +31,16 @@ const footerData = {
     },
     {
       title: 'Programs',
-      links: [{ text: 'Hidden36', href: 'https://www.hidden36.com/' }],
+      links: [
+        {
+          text: 'Hidden36',
+          href: 'https://www.hidden36.com/',
+        },
+        {
+          text: 'Giving',
+          href: getPermalink('/giving'),
+        },
+      ],
     },
   ],
 
