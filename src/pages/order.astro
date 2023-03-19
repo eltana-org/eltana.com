@@ -1,0 +1,149 @@
+---
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
+import { Picture } from '@astrojs/image/components';
+import { getPermalink } from '~/utils/permalinks';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Block from '~/components/widgets/Block.astro';
+
+import hero from '~/config/pages/order/hero';
+import callToAction from '~/config/pages/order/call-to-action';
+import neighborhoodDelivery from '~/config/pages/order/neighborhood-delivery';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  {
+    hero && hero.enabled && (
+      <Hero
+        callToAction={{
+          enabled: hero.callToAction.enabled,
+          text: hero.callToAction.text,
+          href: hero.callToAction.href,
+          target: hero.callToAction.target,
+          rel: hero.callToAction.rel,
+          icon: hero.callToAction.icon,
+        }}
+        callToAction2={{
+          enabled: hero.callToAction2.enabled,
+          text: hero.callToAction2.text,
+          href: hero.callToAction2.href,
+          target: hero.callToAction2.target,
+          rel: hero.callToAction2.rel,
+          icon: hero.callToAction2.icon,
+        }}
+        image={{ enabled: hero.image.enabled, src: hero.image.src, alt: hero.image.alt }}
+      >
+        {hero.title.enabled && <Fragment slot="title" set:html={hero.title.text} />}
+
+        {hero.subtitle.enabled && <Fragment slot="subtitle" set:html={hero.subtitle.text} />}
+      </Hero>
+    )
+  }
+
+  <!-- Block Widget ****************** -->
+
+  <Block
+    enabled={true}
+    backgroundCss={null}
+    title={'Place an Order Online'}
+    subtitle={'Schedule a pick-up or delivery'}
+    highlight={'Online'}
+    content={'For more information, please call 206-420-1293 between 7AM and 4PM, or email orders@eltana.com. All orders MUST be placed 24 hours in advance.'}
+    image={{
+      enabled: false,
+      src: null,
+      alt: 'eltana online order',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'Delivery +24hr',
+      href: 'https://order.online/business/eltana-31788/en-US',
+      target: '_blank',
+      rel: [],
+      icon: 'tabler:truck-delivery',
+    }}
+    callToAction2={{
+      enabled: true,
+      text: 'Pick-up +24hr',
+      href: getPermalink('/order'),
+      target: '_self',
+      rel: [],
+      icon: 'tabler:briefcase',
+    }}
+  />
+
+  <Block
+    enabled={true}
+    backgroundCss={''}
+    title={'Catering Menu'}
+    subtitle={`Group Orders and Catering Menu`}
+    highlight={'Menu'}
+    content={null}
+  />
+
+  <!-- Menu Images -->
+  <section class:list={`py-0`}>
+    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+      <Picture
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        aspectRatio={627 / 874}
+        loading="eager"
+        width={627}
+        height={874}
+        src={import('~/assets/images/groups-menu.jpg')}
+        alt="Eltana Group Ordering Menu"
+        fit={'contain'}
+      />
+    </div>
+  </section>
+
+  <!-- CallToAction Widget *********** -->
+  {
+    callToAction && callToAction.enabled && (
+      <CallToAction
+        callToAction={{
+          enabled: callToAction.button.enabled,
+          text: callToAction.button.text,
+          href: callToAction.button.href,
+          icon: callToAction.button.icon,
+          rel: callToAction.button.rel,
+          target: callToAction.button.target,
+        }}
+      >
+        <Fragment slot="title" set:html={callToAction.title} />
+        <Fragment slot="subtitle" set:html={callToAction.subtitle} />
+      </CallToAction>
+    )
+  }
+
+  <!-- CallToAction Widget *********** -->
+  {
+    neighborhoodDelivery && neighborhoodDelivery.enabled && (
+      <CallToAction
+        callToAction={{
+          enabled: neighborhoodDelivery.button.enabled,
+          text: neighborhoodDelivery.button.text,
+          href: neighborhoodDelivery.button.href,
+          icon: neighborhoodDelivery.button.icon,
+          rel: neighborhoodDelivery.button.rel,
+          target: neighborhoodDelivery.button.target,
+        }}
+      >
+        <Fragment slot="title" set:html={neighborhoodDelivery.title} />
+        <Fragment slot="subtitle" set:html={neighborhoodDelivery.subtitle} />
+      </CallToAction>
+    )
+  }
+</Layout>
