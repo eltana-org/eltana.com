@@ -8,6 +8,9 @@ const hero = {
   // If the entire hero section should be enabled or not
   enabled: true,
 
+  // Custom CSS padding for the hero element
+  padding: 'pt-12 md:pt-20 pb-5',
+
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
