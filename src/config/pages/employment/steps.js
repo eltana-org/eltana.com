@@ -23,21 +23,36 @@ const steps = {
       icon: 'tabler:tools-kitchen',
     },
     {
-      title: 'Step 3: <span class="font-medium">Customize styles</span>',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-      icon: 'tabler:paint',
+      title: 'Life: <span class="font-medium">Goals</span>',
+      description: 'What do you want out of life? Describe the type of person you aspire to be',
+      icon: 'tabler:bulb',
     },
     {
-      title: 'Ready!',
+      title: 'Food: <span class="font-medium">What Do You Like</span>',
+      description: 'What kind of food do you like? What about this food makes it appealing to you?',
+      icon: 'tabler:cookie',
+    },
+    {
+      title: 'Group: <span class="font-medium">Experience</span>',
+      description: 'Tell us about a great group experience you had and what made it positive and memorable',
+      icon: 'tabler:friends',
+    },
+    {
+      title: 'Spirit: <span class="font-medium">Influences and Inspiration</span>',
+      description:
+        'Identify and explain the influences and inspirations that helped you become candid, efficient, and generous of spirit.',
+      icon: 'tabler:star',
+    },
+    {
+      title: 'Apply!',
       icon: 'tabler:check',
     },
   ],
 
   // The image to be displayed on the right side of the component
   image: {
-    src: import('~/assets/images/hero.jpg'),
-    alt: 'Steps image',
+    src: import('~/assets/images/bagel-paper.jpg'),
+    alt: 'Bagel on crossword paper',
   },
 };
 
