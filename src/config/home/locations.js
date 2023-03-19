@@ -10,7 +10,8 @@ const locations = {
   // Main title text
   title: 'Locations',
   // Subtitle text
-  subtitle: 'We have two locations in Seattle for dine-in, takeout, and delivery.',
+  subtitle:
+    'We have two locations in Seattle for dine-in, takeout, and delivery. Our locations are open from 7am to 4pm daily.',
 
   // Location cards to display
   locations: [
