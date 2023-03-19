@@ -35,6 +35,10 @@ const headerData = {
           text: 'Contact',
           href: getPermalink('/contact'),
         },
+        {
+          text: 'Employment',
+          href: getPermalink('/employment'),
+        },
       ],
     },
   ],
