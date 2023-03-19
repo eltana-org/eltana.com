@@ -83,38 +83,6 @@ const meta = {
     )
   }
 
-  <!-- Content Widget **************** -->
-  {
-    content && content.enabled && (
-      <>
-        <Content
-          highlight={content.primary.highlight}
-          title={content.primary.title}
-          items={content.primary.items}
-          image={{
-            src: content.primary.image.src,
-            alt: content.primary.image.alt,
-            enabled: content.primary.image.enabled,
-          }}
-        >
-          <Fragment slot="content" set:html={content.primary.description} />
-        </Content>
-        {content.secondary.enabled && (
-          <Content
-            isReversed
-            isAfterContent
-            items={content.secondary.items}
-            image={{
-              src: content.secondary.image.src,
-              alt: content.secondary.image.alt,
-              enabled: content.secondary.image.enabled,
-            }}
-          />
-        )}
-      </>
-    )
-  }
-
   <!-- Steps Widget ****************** -->
 
   {
@@ -229,6 +197,42 @@ const meta = {
         information={featuredPosts.information}
         postIds={featuredPosts.postIds}
       />
+    )
+  }
+
+  <!-- Content Widget **************** -->
+  {
+    content && content.enabled && (
+      <>
+        <Content
+          highlight={content.primary.highlight}
+          title={content.primary.title}
+          items={content.primary.items}
+          image={{
+            src: content.primary.image.src,
+            alt: content.primary.image.alt,
+            enabled: content.primary.image.enabled,
+          }}
+        >
+          <Fragment slot="content" set:html={content.primary.description} />
+        </Content>
+        {content.secondary.enabled && (
+          <Content
+            isReversed
+            isAfterContent
+            title={content.secondary.title}
+            highlight={content.secondary.highlight}
+            items={content.secondary.items}
+            image={{
+              src: content.secondary.image.src,
+              alt: content.secondary.image.alt,
+              enabled: content.secondary.image.enabled,
+            }}
+          >
+            <Fragment slot="content" set:html={content.primary.description} />
+          </Content>
+        )}
+      </>
     )
   }
 

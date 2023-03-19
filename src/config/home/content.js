@@ -2,7 +2,7 @@
 
 const content = {
   // If the entire content component should be enabled
-  enabled: false,
+  enabled: true,
 
   // Configuration for the primary section of the content component (the first and larger section)
   primary: {
@@ -10,15 +10,14 @@ const content = {
     enabled: true,
 
     // Small highlight text to go above the title
-    highlight: 'Inside template',
+    highlight: 'Yummm',
 
     // Main title text of the primary content component
-    title: "And what's inside? ...",
+    title: 'What does Eltana have in store?',
 
     // Main description text of the primary content component (HTML supported)
-    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-    Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit
-    te euismod tacimates.`,
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Delicious Montreal Style Bagels</h3>
+    Eltana bagels are unique in many ways. Our distinct wood-fired Montreal style bagels are made with a special blend of flours and are boiled in honey water before baking. This process gives our bagels a unique taste and texture that you'll love.`,
 
     // The items to be displayed in the primary section
     items: [
@@ -54,6 +53,11 @@ const content = {
   secondary: {
     // If the secondary section should be enabled
     enabled: true,
+
+    title: 'Coffee',
+    highlight: 'Coffee',
+    description:
+      'We serve a variety of coffee drinks, including lattes, cappuccinos, and espresso shots. We also serve a variety of teas, including chai and green tea.',
 
     // Items to be displayed in the secondary section
     items: [
