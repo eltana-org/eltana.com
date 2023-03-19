@@ -56,7 +56,7 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/menu.jpg'),
+    src: import('~/assets/images/menu-hero.jpg'),
     // Image alt text
     alt: 'AstroWind Hero Image',
   },
