@@ -49,7 +49,7 @@ const headerData = {
       // text to display on the button
       text: 'Order',
       // link to go to when the button is clicked
-      href: getPermalink('/order'),
+      href: getPermalink('/same-day-delivery'),
       // can be 'button', 'primary', or 'ghost'
       type: 'button',
       // HTML rel attribute
