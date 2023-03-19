@@ -58,7 +58,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/paper-bag.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Eltana bagels for delivery and paper bag',
   },
 };
 

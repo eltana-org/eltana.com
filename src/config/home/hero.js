@@ -61,7 +61,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/hero.png'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Eltana bagels hero image',
   },
 };
 

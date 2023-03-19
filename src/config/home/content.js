@@ -43,7 +43,7 @@ const content = {
       // If the image should be enabled
       enabled: true,
       // Alt text for the image
-      alt: 'Colorful Image',
+      alt: 'Eltana bagels',
       // The image to be displayed
       src: import('~/assets/images/hero.jpg'),
     },
@@ -86,7 +86,7 @@ const content = {
       // If the image should be enabled
       enabled: true,
       // Alt text for the image
-      alt: 'Vintage Image',
+      alt: 'Eltana coffee beans',
       // The image to be displayed
       src: import('~/assets/images/coffee-beans.jpg'),
     },

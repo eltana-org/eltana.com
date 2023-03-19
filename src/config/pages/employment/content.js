@@ -43,7 +43,7 @@ const content = {
       // If the image should be enabled
       enabled: true,
       // Alt text for the image
-      alt: 'Colorful Image',
+      alt: 'rainbow bagels and cream cheese spread',
       // The image to be displayed
       src: import('~/assets/images/rainbow-spread.png'),
     },
@@ -69,7 +69,7 @@ const content = {
       // If the image should be enabled
       enabled: true,
       // Alt text for the image
-      alt: 'Vintage Image',
+      alt: 'Eltana stone way location for employment',
       // The image to be displayed
       src: import('~/assets/images/stoneway-alt.jpg'),
     },

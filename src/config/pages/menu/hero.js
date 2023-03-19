@@ -58,7 +58,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/menu-hero.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Eltana menu page hero image',
   },
 };
 

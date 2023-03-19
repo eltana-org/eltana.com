@@ -58,7 +58,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/brunch-box.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Brunch box for group orders and catering at Eltana',
   },
 };
 
