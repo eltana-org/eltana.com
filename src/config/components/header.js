@@ -7,6 +7,19 @@ import { getPermalink, getBlogPermalink } from '~/utils/permalinks';
 const headerData = {
   // List of links to be displayed in the header
   links: [
+    // A single link with no dropdown
+    {
+      text: 'Menu',
+      href: getPermalink('/menu'),
+    },
+
+    // The blog link is a special case, it uses the getBlogPermalink function
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+    },
+
+    // A link with a dropdown
     {
       text: 'Pages',
       links: [
@@ -23,18 +36,6 @@ const headerData = {
           href: getPermalink('/contact'),
         },
       ],
-    },
-
-    // A single link with no dropdown
-    {
-      text: 'Menu',
-      href: getPermalink('/menu'),
-    },
-
-    // The blog link is a special case, it uses the getBlogPermalink function
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
     },
   ],
 
