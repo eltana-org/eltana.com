@@ -17,6 +17,7 @@ export interface Props {
   subtitle?: any;
   highlight?: any;
   backgroundCss?: any;
+  mainDivCss?: any;
   content?: any;
   callToAction?: any | CallToAction;
   callToAction2?: any | CallToAction;
@@ -26,6 +27,7 @@ export interface Props {
 const {
   enabled,
   backgroundCss,
+  mainDivCss,
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   highlight,
@@ -39,16 +41,23 @@ var backgroundStyle = '';
 if (backgroundCss === '' || backgroundCss) {
   backgroundStyle = backgroundCss;
 } else {
-  backgroundStyle = 'bg-amber-50 dark:bg-slate-800';
+  backgroundStyle = 'bg-amber-50 dark:bg-slate-800 px-10 py-10';
+}
+
+var mainDivStyle = '';
+if (mainDivCss === '' || mainDivCss) {
+  mainDivStyle = mainDivCss;
+} else {
+  mainDivStyle = 'mb-10 md:mx-auto text-center md:mb-12 max-w-3xl';
 }
 ---
 
 {
   enabled === true && (
-    <section class:list={`${backgroundStyle} px-10 py-10`}>
+    <section class:list={backgroundStyle}>
       <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
         {(title || subtitle || highlight) && (
-          <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
+          <div class={mainDivStyle}>
             {highlight && (
               <p
                 class="text-base text-primary dark:text-blue-200 font-semibold tracking-wide uppercase"
