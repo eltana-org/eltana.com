@@ -58,7 +58,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/stoneway.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Employment at Eltana',
   },
 };
 
