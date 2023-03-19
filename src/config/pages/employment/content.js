@@ -24,14 +24,17 @@ const content = {
       {
         title: 'Candor',
         description: 'People who are comfortable being direct and honest',
+        icon: 'tabler:mood-smile',
       },
       {
         title: 'Efficiency',
         description: 'Excited by finding smarter and more effective ways of doing things',
+        icon: 'tabler:bolt',
       },
       {
         title: 'Generosity of Spirit',
         description: 'Assume the best in people and tend to give others the benefit of the doubt',
+        icon: 'tabler:heart',
       },
     ],
 
