@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import DirectionsIcon from '@mui/icons-material/Directions';
+import StoreIcon from '@mui/icons-material/Store';
 
 export default function Locations(props) {
   // Dynamically set the gridcss depending on how many items are in the locations list
@@ -86,6 +87,8 @@ export default function Locations(props) {
                           icon = <EmailIcon />;
                         } else if (button.icon === 'directions') {
                           icon = <DirectionsIcon />;
+                        } else if (button.icon === 'store') {
+                          icon = <StoreIcon />;
                         }
 
                         return (
