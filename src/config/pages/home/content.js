@@ -44,7 +44,7 @@ const content = {
       },
       {
         title: 'A Variety of Spreads',
-        description: `We offer a variety of spreads including plain cream cheese, fig cherry compote, almond butter, scallion, spicy garlic, lox spread, and so much more!`,
+        description: `We offer a variety of spreads including plain cream cheese, fig cherry compote, almond butter, scallion, spicy garlic, lox spread, and so much more.`,
         icon: 'tabler:mood-happy',
       },
     ],

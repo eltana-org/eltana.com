@@ -13,7 +13,7 @@ const callToAction = {
   title: 'About Eltana',
 
   // The subtitle of the call to action component (supports HTML)
-  subtitle: `Click the link below to learn more about Eltana, our culture, and our history!`,
+  subtitle: `Click the link below to learn more about Eltana, our culture, and our history`,
 
   // Button configuration for the call to action component
   button: {

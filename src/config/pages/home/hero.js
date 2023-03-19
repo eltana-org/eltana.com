@@ -20,7 +20,7 @@ const hero = {
     text: `<span class="hidden sm:inline">
     <span class="font-semibold">Eltana</span> is a wood-fired bagel cafe located in Seattle, WA.<br></span
     >
-    <span class="block mb-1 sm:hidden font-bold text-yellow-700">Wood-Fired Bagel Cafe</span>Bagels, Coffee, and more!`,
+    <span class="block mb-1 sm:hidden font-bold text-yellow-700">Wood-Fired Bagel Cafe</span>Bagels, Coffee, and more.`,
   },
 
   // First CTA block
