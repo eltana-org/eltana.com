@@ -45,7 +45,7 @@ const content = {
       // Alt text for the image
       alt: 'Eltana bagels',
       // The image to be displayed
-      src: import('~/assets/images/hero.jpg'),
+      src: import('~/assets/images/bagels-in-bin.jpg'),
     },
   },
 
