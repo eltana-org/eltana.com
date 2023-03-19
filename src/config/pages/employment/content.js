@@ -45,7 +45,7 @@ const content = {
       // Alt text for the image
       alt: 'Colorful Image',
       // The image to be displayed
-      src: import('~/assets/images/hero.jpg'),
+      src: import('~/assets/images/rainbow-spread.png'),
     },
   },
 
@@ -71,7 +71,48 @@ const content = {
       // Alt text for the image
       alt: 'Vintage Image',
       // The image to be displayed
-      src: import('~/assets/images/hebrew.svg'),
+      src: import('~/assets/images/stoneway-alt.jpg'),
+    },
+  },
+
+  third: {
+    // If the primary section should be enabled
+    enabled: true,
+
+    // Small highlight text to go above the title
+    highlight: `Our Positions`,
+
+    // Main title text of the primary content component
+    title: `Positions Available`,
+
+    // Main description text of the primary content component (HTML supported)
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">You Don't have to be Jewish; Just Curious</h3>
+    We are looking to hire a diverse, representative group of people who embody the intentions behind this tradition, and can translate them into productive work. More specifically, we are looking for:`,
+
+    // The items to be displayed in the primary section
+    items: [
+      {
+        title: 'Outgoing and Efficient Counter Servers',
+        description:
+          'No restaurant experience is required - just street smarts and passion. If you can apply those traits well you may also find yourself, in a few short months, in a position of responsibility as we also need to hire Bakery Managers and Assistant Managers.',
+        icon: 'tabler:coffee',
+      },
+      {
+        title: 'Bakery Managers and Assistant Managers',
+        description:
+          'The people we are looking for bring a mix of front of house and kitchen experience to the table. They have the empathy to work with a smart staff and they understand how to listen to and truly serve customers.',
+        icon: 'tabler:report',
+      },
+    ],
+
+    // Configuration for the image to be displayed in the primary section
+    image: {
+      // If the image should be enabled
+      enabled: true,
+      // Alt text for the image
+      alt: 'Bagels being shared',
+      // The image to be displayed
+      src: import('~/assets/images/capitol-hill.jpg'),
     },
   },
 };

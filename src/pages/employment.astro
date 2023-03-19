@@ -140,7 +140,7 @@ const meta = {
         >
           <Fragment slot="content" set:html={content.primary.description} />
         </Content>
-        {content.secondary.enabled && (
+        {content.secondary && content.secondary.enabled && (
           <Content
             isReversed
             isAfterContent
@@ -154,6 +154,21 @@ const meta = {
             }}
           >
             <Fragment slot="content" set:html={content.secondary.description} />
+          </Content>
+        )}
+        {content.third && content.third.enabled && (
+          <Content
+            isAfterContent
+            highlight={content.third.highlight}
+            title={content.third.title}
+            items={content.third.items}
+            image={{
+              src: content.third.image.src,
+              alt: content.third.image.alt,
+              enabled: content.third.image.enabled,
+            }}
+          >
+            <Fragment slot="content" set:html={content.third.description} />
           </Content>
         )}
       </>

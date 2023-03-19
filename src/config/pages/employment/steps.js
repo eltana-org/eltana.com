@@ -45,6 +45,7 @@ const steps = {
     },
     {
       title: 'Apply!',
+      description: 'Send your completed questions and a resume to: daniel@eltana.com',
       icon: 'tabler:check',
     },
   ],
