@@ -1,7 +1,7 @@
 ---
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
-import { getPermalink } from '~/utils/permalinks';
+import { Picture } from '@astrojs/image/components';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -53,32 +53,28 @@ const meta = {
   <Block
     enabled={true}
     backgroundCss={''}
-    title={'Order Online!'}
-    subtitle={'Place your order online'}
-    highlight={'Online'}
-    content={'Eltana now offers different options for you to order online. You can place a same day order which is delivered by a service such as Uber Eats, you can schedule an order (24 hours in advance) for  pick-up / delivery, or you can participate in our neighborhood delivery program.'}
-    image={{
-      enabled: false,
-      src: null,
-      alt: 'eltana online order',
-    }}
-    callToAction={{
-      enabled: true,
-      text: 'Today',
-      href: getPermalink('/same-day-delivery'),
-      target: '_self',
-      rel: [],
-      icon: 'tabler:bolt',
-    }}
-    callToAction2={{
-      enabled: true,
-      text: 'Scheduled +24hr',
-      href: getPermalink('/order'),
-      target: '_self',
-      rel: [],
-      icon: 'tabler:clock',
-    }}
+    title={'Our Menus'}
+    subtitle={`Eltana's in-store menus for bagels, coffee, and more.`}
+    highlight={'Menu'}
+    content={null}
   />
+
+  <!-- Menu Images -->
+  <section class:list={`py-10`}>
+    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+      <Picture
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        aspectRatio={1024 / 576}
+        loading="eager"
+        width={1024}
+        height={576}
+        src={import('~/assets/images/menu-1.jpg')}
+        alt="Bagel Menu"
+      />
+    </div>
+  </section>
 
   <!-- CallToAction Widget *********** -->
   {
