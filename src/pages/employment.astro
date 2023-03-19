@@ -103,21 +103,6 @@ const meta = {
     )
   }
 
-  <!-- Steps Widget ****************** -->
-
-  {
-    steps && steps.enabled && (
-      <Steps
-        title={steps.title}
-        items={steps.items}
-        image={{
-          src: steps.image.src,
-          alt: steps.image.alt,
-        }}
-      />
-    )
-  }
-
   <!-- Features2 Widget ************** -->
 
   {
@@ -170,6 +155,22 @@ const meta = {
       icon: 'tabler:clock',
     }}
   />
+
+  <!-- Steps Widget ****************** -->
+
+  {
+    steps && steps.enabled && (
+      <Steps
+        title={steps.title}
+        subtitle={steps.subtitle}
+        items={steps.items}
+        image={{
+          src: steps.image.src,
+          alt: steps.image.alt,
+        }}
+      />
+    )
+  }
 
   <!-- CallToAction Widget *********** -->
   {

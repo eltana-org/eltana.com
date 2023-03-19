@@ -2,24 +2,25 @@
 
 const steps = {
   // Whether the component is enabled or not
-  enabled: false,
+  enabled: true,
 
   // The title text of the component
-  title: 'Get your dream website up and running in no time with AstroWind.',
+  title: 'Apply',
+
+  subtitle:
+    'Please answer three of the questions below in 250 words or less. Send your completed questions and a resume to: daniel@eltana.com',
 
   // Items to be displayed as steps
   items: [
     {
-      title: 'Step 1: <span class="font-medium">Download</span>',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-      icon: 'tabler:package',
+      title: 'About: <span class="font-medium">Tell Us About Yourself</span>',
+      description: 'Tell us about yourself. Who are you? What do you do well?',
+      icon: 'tabler:user',
     },
     {
-      title: 'Step 2: <span class="font-medium">Add content</em>',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-      icon: 'tabler:letter-case',
+      title: 'Service: <span class="font-medium">Great Service Examples</em>',
+      description: 'What does great service mean to you? Describe and give examples.',
+      icon: 'tabler:tools-kitchen',
     },
     {
       title: 'Step 3: <span class="font-medium">Customize styles</span>',
