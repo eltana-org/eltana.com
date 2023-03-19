@@ -99,25 +99,6 @@ const meta = {
 
   <!-- CallToAction Widget *********** -->
   {
-    neighborhoodDelivery && neighborhoodDelivery.enabled && (
-      <CallToAction
-        callToAction={{
-          enabled: neighborhoodDelivery.button.enabled,
-          text: neighborhoodDelivery.button.text,
-          href: neighborhoodDelivery.button.href,
-          icon: neighborhoodDelivery.button.icon,
-          rel: neighborhoodDelivery.button.rel,
-          target: neighborhoodDelivery.button.target,
-        }}
-      >
-        <Fragment slot="title" set:html={neighborhoodDelivery.title} />
-        <Fragment slot="subtitle" set:html={neighborhoodDelivery.subtitle} />
-      </CallToAction>
-    )
-  }
-
-  <!-- CallToAction Widget *********** -->
-  {
     callToAction && callToAction.enabled && (
       <CallToAction
         callToAction={{
@@ -131,6 +112,25 @@ const meta = {
       >
         <Fragment slot="title" set:html={callToAction.title} />
         <Fragment slot="subtitle" set:html={callToAction.subtitle} />
+      </CallToAction>
+    )
+  }
+
+  <!-- CallToAction Widget *********** -->
+  {
+    neighborhoodDelivery && neighborhoodDelivery.enabled && (
+      <CallToAction
+        callToAction={{
+          enabled: neighborhoodDelivery.button.enabled,
+          text: neighborhoodDelivery.button.text,
+          href: neighborhoodDelivery.button.href,
+          icon: neighborhoodDelivery.button.icon,
+          rel: neighborhoodDelivery.button.rel,
+          target: neighborhoodDelivery.button.target,
+        }}
+      >
+        <Fragment slot="title" set:html={neighborhoodDelivery.title} />
+        <Fragment slot="subtitle" set:html={neighborhoodDelivery.subtitle} />
       </CallToAction>
     )
   }
