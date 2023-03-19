@@ -22,19 +22,30 @@ const content = {
     // The items to be displayed in the primary section
     items: [
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Montreal Style',
         description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+          'Our bagels are made with a special blend of flours and hand-rolled making each bagel unique in shape and size.',
+        icon: 'tabler:star',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        title: 'Honey Boiled',
+        description: 'Our bagels are boiled in honey water before baking for a soft, chewy texture.',
+        icon: 'tabler:droplet',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        title: 'Wood-Fired',
+        description: 'All our bagels are wood-fired for a flavorful char and a unique texture.',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'A Variety of Flavors',
+        description: `We offer a variety of bagel flavors including plain, sesame, poppy, za'atar, salt, everything, rainbow and more.`,
+        icon: 'tabler:tools-kitchen',
+      },
+      {
+        title: 'A Variety of Spreads',
+        description: `We offer a variety of spreads including plain cream cheese, fig cherry compote, almond butter, scallion, spicy garlic, lox spread, and so much more!`,
+        icon: 'tabler:mood-happy',
       },
     ],
 
