@@ -236,6 +236,36 @@ const meta = {
     )
   }
 
+  <Block
+    enabled={true}
+    backgroundCss={''}
+    title={'Gift Cards'}
+    subtitle={'Give the gift of Bagels!'}
+    highlight={'e-gift cards'}
+    content={null}
+    image={{
+      enabled: false,
+      src: null,
+      alt: 'eltana online order',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'Buy a Gift Card',
+      href: 'https://squareup.com/gift/D77NFN0ZX4D6W/order',
+      target: '_blank',
+      rel: [],
+      icon: 'tabler:gift',
+    }}
+    callToAction2={{
+      enabled: false,
+      text: 'Scheduled +24hr',
+      href: getPermalink('/order'),
+      target: '_self',
+      rel: [],
+      icon: 'tabler:clock',
+    }}
+  />
+
   <!-- CallToAction Widget *********** -->
   {
     callToAction && callToAction.enabled && (
