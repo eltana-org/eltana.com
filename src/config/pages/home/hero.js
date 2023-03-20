@@ -11,7 +11,7 @@ const hero = {
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
-    text: `<span class="font-bold">Eltana</span>`,
+    text: `<span class="text-transparent text-8xl bg-clip-text bg-gradient-to-r from-amber-400 to-amber-800">Eltana</span>`,
   },
 
   // Hero subtitle with HTML support
