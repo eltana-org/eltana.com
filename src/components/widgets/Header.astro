@@ -16,7 +16,7 @@ interface Link {
 interface ActionLink extends Link {
   type?: string;
   target?: string;
-  rel?: string;
+  rel?: any;
 }
 
 interface MenuLink extends Link {
@@ -26,10 +26,10 @@ interface MenuLink extends Link {
 export interface Props {
   links?: Array<MenuLink>;
   actions?: Array<ActionLink>;
-  isSticky?: boolean;
-  showToggleTheme?: boolean;
-  showRssFeed?: boolean;
-  position?: string;
+  isSticky?: any;
+  showToggleTheme?: any;
+  showRssFeed?: any;
+  position?: any;
 }
 
 const {
