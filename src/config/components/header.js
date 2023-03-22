@@ -28,10 +28,6 @@ const headerData = {
           href: getPermalink('/about'),
         },
         {
-          text: 'Team',
-          href: getPermalink('/team'),
-        },
-        {
           text: 'Contact',
           href: getPermalink('/contact'),
         },

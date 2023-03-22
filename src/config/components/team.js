@@ -2,7 +2,7 @@
 
 const team = {
   // Whether the team page is enabled or not
-  enabled: true,
+  enabled: false,
 
   // The title of the team section
   title: 'Our Team',
