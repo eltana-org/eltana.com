@@ -16,13 +16,13 @@ const content = {
     title: 'Eltana Bagels',
 
     // Main description text of the primary content component (HTML supported)
-    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Delicious Montreal Style Bagels</h3>
-    Eltana bagels are unique in many ways. Our distinct wood-fired Montreal style bagels are made with a special blend of flours and are boiled in honey water before baking. This process gives our bagels a unique taste and texture that you'll love.`,
+    description: `<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Deliciously Different</h3>
+    Eltana bagels are unique in many ways. Our distinct wood-fired style bagels are made with a special blend of flours and are boiled in honey water before baking. This process gives our bagels a unique taste and texture that you'll love.`,
 
     // The items to be displayed in the primary section
     items: [
       {
-        title: 'Montreal Style',
+        title: 'Deliciously Different',
         description:
           'Our bagels are made with a special blend of flours and hand-rolled making each bagel unique in shape and size.',
         icon: 'tabler:star',
