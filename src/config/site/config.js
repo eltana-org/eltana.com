@@ -25,7 +25,7 @@ const CONFIG = {
 
   // Default site theme
   // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-  defaultTheme: 'system',
+  defaultTheme: 'light:only',
 
   // The default language of the website
   language: 'en',
@@ -48,7 +48,7 @@ const CONFIG = {
   showRssFeed: false,
 
   // If the theme switcher should be displayed
-  showToggleTheme: true,
+  showToggleTheme: false,
 
   // If the header should be stick to the top of the page
   isSticky: true,
