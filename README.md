@@ -6,6 +6,10 @@ The public source code for the [eltana.com](https://eltana.com) website.
 
 ![homepage](docs/assets/homepage.png)
 
+## About 💡
+
+This repository contains the source code for [eltana.com](https://eltana.com). It is built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). The site is hosted on [GitHub Pages](https://pages.github.com) and deployed using [GitHub Actions](https://github.com/features/actions).
+
 ## Config Files
 
 The core way this template is different from the original is that it heavily uses `.js` config files to configure data and content for its site.
