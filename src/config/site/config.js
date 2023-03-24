@@ -7,7 +7,7 @@ const CONFIG = {
   // The name of the website
   name: 'Eltana',
   // The origin of the website (without trailing slash)
-  origin: 'https://demo.eltana.com',
+  origin: 'https://eltana.com',
   // The base pathname of the website
   basePathname: '/',
   // If the website uses trailing slashes in the URLs

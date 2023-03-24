@@ -16,7 +16,7 @@ permissions:
 
 # set an environment variable for use in the jobs pointing the site_url
 env:
-  site_url: https://demo.eltana.com
+  site_url: https://eltana.com
 
 jobs:
   # branch-deploy trigger job
