@@ -4,6 +4,8 @@
 
 The public source code for the [eltana.com](https://eltana.com) website.
 
+![homepage](docs/assets/homepage.png)
+
 ## Config Files
 
 The core way this template is different from the original is that it heavily uses `.js` config files to configure data and content for its site.
