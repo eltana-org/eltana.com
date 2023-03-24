@@ -2,6 +2,7 @@
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
 import { getPermalink } from '~/utils/permalinks';
+import { Picture } from '@astrojs/image/components';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -286,4 +287,22 @@ const meta = {
       </CallToAction>
     )
   }
+
+  <!-- Rainbow Image -->
+  <section class:list={`pb-20 px-5`}>
+    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+      <Picture
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        aspectRatio={1080 / 1080}
+        loading="eager"
+        width={1080}
+        height={1080}
+        src={import('~/assets/images/rainbow-spread.png')}
+        alt="Rainbow bagels at eltana with plain cream cheese spread"
+        fit={'contain'}
+      />
+    </div>
+  </section>
 </Layout>
