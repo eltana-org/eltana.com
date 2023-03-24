@@ -1,4 +1,4 @@
-# demo.eltana.com 🥯
+# eltana.com 🥯
 
 [![deploy](https://github.com/eltana-org/eltana.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/eltana-org/eltana.com/actions/workflows/deploy.yml) [![ci](https://github.com/eltana-org/eltana.com/actions/workflows/ci.yml/badge.svg)](https://github.com/eltana-org/eltana.com/actions/workflows/ci.yml) [![lint](https://github.com/eltana-org/eltana.com/actions/workflows/lint.yml/badge.svg)](https://github.com/eltana-org/eltana.com/actions/workflows/lint.yml) [![CodeQL](https://github.com/eltana-org/eltana.com/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/eltana-org/eltana.com/actions/workflows/codeql-analysis.yml)
 
