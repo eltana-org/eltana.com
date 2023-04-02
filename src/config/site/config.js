@@ -41,7 +41,7 @@ const CONFIG = {
   }),
 
   // Google Analytics configuration
-  googleAnalyticsId: 'G-S2C6W26LCH', // or "G-XXXXXXXXXX",
+  googleAnalyticsId: 'G-7Y9RT7Y1PY', // or "G-XXXXXXXXXX",
   googleSiteVerificationId: '',
 
   // If the RSS feed button should be displayed
