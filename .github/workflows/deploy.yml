@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3.5.0
+        uses: actions/checkout@v3
 
       - name: build with astro
         uses: withastro/action@dc081df9eacdb11181ea51e5d05853faa5aee891 # pin@v0.2.0
@@ -37,4 +37,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@497da40f5225e762159b457c9ae5d6f75a136f5c # pin@v1.2.5
+        uses: actions/deploy-pages@73e62e651178eeba977de2dc9f4c7645b3d01015 # pin@v2.0.0
