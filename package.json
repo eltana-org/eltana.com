@@ -8,7 +8,6 @@
     "start": "astro dev",
     "build": "astro build",
     "check": "astro check",
-    "prebuild": "astro sync",
     "preview": "astro preview",
     "astro": "astro",
     "bootstrap": "npm install && npm run astro sync && npm run astro check",

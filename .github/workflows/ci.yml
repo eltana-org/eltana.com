@@ -34,8 +34,5 @@ jobs:
       - name: check
         run: npm run check
 
-      - name: prebuild
-        run: npm run prebuild
-
       - name: build
         run: npm run build
