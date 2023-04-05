@@ -59,9 +59,9 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/brunch-box.jpg'),
+    src: import('~/assets/images/bagel-paper.jpg'),
     // Image alt text
-    alt: 'Brunch box for group orders and catering at Eltana',
+    alt: 'bagel on crossword paper',
   },
 };
 
