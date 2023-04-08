@@ -2,7 +2,7 @@
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
 import { Picture } from '@astrojs/image/components';
-import { getPermalink } from '~/utils/permalinks';
+// import { getPermalink } from '~/utils/permalinks';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -76,8 +76,8 @@ const meta = {
     callToAction2={{
       enabled: true,
       text: 'Pick-up +24hr',
-      href: getPermalink('/order'),
-      target: '_self',
+      href: 'https://eltana.formstack.com/forms/order',
+      target: '_blank',
       rel: [],
       icon: 'tabler:briefcase',
     }}
