@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@astrojs/image": "^0.16.3",
-    "@astrojs/mdx": "^0.18.2",
+    "@astrojs/mdx": "^0.18.4",
     "@astrojs/partytown": "^1.2.0",
     "@astrojs/rss": "^2.3.2",
     "@astrojs/sitemap": "^1.2.1",
