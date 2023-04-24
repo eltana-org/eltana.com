@@ -3,7 +3,7 @@ publishDate: 2023-04-24T00:00:00Z
 title: PCC and Metropolitan Market
 description: Eltana Bagels are now available at PCC and Metropolitan Market in West Seattle
 excerpt: For the month of May, when you buy a bag of bagels from PCC or Metropolitan Market in West Seattle, we will give you a $10 gift card!
-image: ~/assets/images/bagel-paper.jpg
+image: ~/assets/images/menu-hero.jpg
 category: News
 tags:
   - news
