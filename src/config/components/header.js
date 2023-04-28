@@ -39,6 +39,10 @@ const headerData = {
           text: 'Giving',
           href: getPermalink('/giving'),
         },
+        {
+          text: 'Gallery',
+          href: getPermalink('/gallery'),
+        },
       ],
     },
   ],
