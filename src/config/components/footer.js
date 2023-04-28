@@ -22,6 +22,7 @@ const footerData = {
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Employment', href: getPermalink('/employment') },
+        { text: 'Gallery', href: getPermalink('/gallery') },
       ],
     },
     {
