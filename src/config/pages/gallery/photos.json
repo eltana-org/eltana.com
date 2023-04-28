@@ -1,0 +1,16 @@
+[
+  {
+    "key": 0,
+    "alt": "capitol-hill.jpg",
+    "src": "/assets/capitol-hill.jpg",
+    "width": 4212,
+    "height": 2808
+  },
+  {
+    "key": 1,
+    "alt": "stoneway.jpg",
+    "src": "/assets/stoneway.jpg",
+    "width": 3558,
+    "height": 2170
+  }
+]
