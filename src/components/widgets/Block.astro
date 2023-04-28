@@ -48,7 +48,7 @@ var mainDivStyle = '';
 if (mainDivCss === '' || mainDivCss) {
   mainDivStyle = mainDivCss;
 } else {
-  mainDivStyle = 'mb-10 md:mx-auto text-center md:mb-12 max-w-3xl';
+  mainDivStyle = 'md:mx-auto text-center max-w-3xl';
 }
 ---
 
@@ -56,7 +56,7 @@ if (mainDivCss === '' || mainDivCss) {
   enabled === true && (
     <section class:list={backgroundStyle}>
       <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-        {(title || subtitle || highlight) && (
+        {(title || subtitle || highlight || content) && (
           <div class={mainDivStyle}>
             {highlight && (
               <p
