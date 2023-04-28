@@ -25,3 +25,5 @@ pnpm-lock.yaml
 .astro
 
 tmp/
+
+.vscode
