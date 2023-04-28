@@ -1,6 +1,11 @@
 const fs = require('fs');
 const sizeOf = require('image-size');
-const images = fs.readdirSync('public/assets/gallery');
+
+const baseDir = 'public';
+const galleryDir = `${baseDir}/assets/gallery`;
+const outputConfigFile = 'src/config/pages/gallery/photos.json';
+
+const images = fs.readdirSync(galleryDir);
 
 // loop through all the images in the public/assets folder
 var imgArray = [];
@@ -11,13 +16,13 @@ images.map((image, index) => {
   }
 
   // get the img height and width
-  const dimensions = sizeOf(`public/assets/${image}`);
+  const dimensions = sizeOf(`${galleryDir}/${image}`);
 
   // create the image object
   const img = {
     key: index,
     alt: image,
-    src: `/assets/${image}`,
+    src: `${galleryDir.replace(baseDir, '')}/${image}`,
     width: dimensions.width,
     height: dimensions.height,
   };
@@ -27,9 +32,9 @@ images.map((image, index) => {
 });
 
 // write the array to a json file
-fs.writeFileSync('src/config/pages/gallery/photos.json', JSON.stringify(imgArray, null, 2));
+fs.writeFileSync(outputConfigFile, JSON.stringify(imgArray, null, 2));
 
 // append a new line to the end of the file
-fs.appendFileSync('src/config/pages/gallery/photos.json', '\n');
+fs.appendFileSync(outputConfigFile, '\n');
 
 console.log('Images generated successfully');
