@@ -2,72 +2,45 @@
 
 const features2 = {
   // If the features2 section should be displayed
-  enabled: false,
+  enabled: true,
 
   // The title of the features2 section
-  title: 'Most used widgets',
+  title: 'Working at Eltana',
 
   // The subtitle of the features2 section
-  subtitle: 'Provides frequently used components for building websites using Tailwind CSS',
+  subtitle:
+    'We want to build a team of smart, interesting and ambitious people – just like you. We know most of you have many alternatives for where to work, and how to earn money, and Grand Plans (or plans to make grand plans) for your life. So we have created a new way of working – more than just a set of benefits.',
 
   // Small highlight text at the top of the features2 section
-  highlight: 'Components',
+  highlight: 'Benefits',
+
+  // total columns to display length wise
+  columns: 2,
 
   // The items in the features2 section
   items: [
     {
-      title: 'Headers',
+      title: 'Feed a Friend',
       description:
-        'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-      icon: 'flat-color-icons:template',
+        'Every counter server, baker or kitchen staff person may now feed one visiting friend per shift for free. The maximum amount of the Feed a Friend (per shift) is $15. The offer has a one drink maximum as well. The friend can take the food to go or eat in store.',
+      icon: 'flat-color-icons:like',
     },
     {
-      title: 'Heros',
+      title: 'Eltana Emeritus Plan',
       description:
-        'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-      icon: 'flat-color-icons:gallery',
+        'Work at Eltana for 9 months or longer and when you leave to pursue your next adventure we will issue you $50 a month food credit every month for a year.',
+      icon: 'flat-color-icons:money-transfer',
     },
     {
-      title: 'Features',
+      title: 'Eltana Intros',
       description:
-        'Display your product in action and how the Features actually create a solution for your target customer.',
-      icon: 'flat-color-icons:todo-list',
+        'We want to know about your hopes and aspirations. We know a lot of people in town. Eltana owners are politicians, scientists, venture capitalists, CEOs and doctors. We would be happy to make introductions for those of you wanting to network to advance your careers.',
+      icon: 'flat-color-icons:reading-ebook',
     },
     {
-      title: 'Content',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'flat-color-icons:document',
-    },
-    {
-      title: 'Call-to-Action',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'flat-color-icons:advertising',
-    },
-    {
-      title: 'Pricing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'flat-color-icons:currency-exchange',
-    },
-    {
-      title: 'Testimonial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'flat-color-icons:voice-presentation',
-    },
-    {
-      title: 'Contact',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'flat-color-icons:business-contact',
-    },
-    {
-      title: 'Footers',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-      icon: 'icon-park:page-template',
+      title: 'Over the Counter',
+      description: `Eltana has many challenging and interesting things that project managers might tackle. Some of these projects involve menu development, website design, e-commerce, catering programs, community outreach and much more. We want to find a project that will interest you, challenge your mind and provide you with a valuable and rewarding experience, great resume fodder, and deeper insight into Eltana's plans to build an important company. Also, you get to earn good money while using more of your burgeoning skills. Eltana Over the Counter projects pay a minimum of $30 an hour.`,
+      icon: 'flat-color-icons:idea',
     },
   ],
 };
