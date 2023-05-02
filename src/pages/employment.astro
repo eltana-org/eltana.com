@@ -71,19 +71,6 @@ const meta = {
     )
   }
 
-  <!-- Features2 Widget ************** -->
-
-  {
-    features2 && features2.enabled && (
-      <Features2
-        title={features2.title}
-        subtitle={features2.subtitle}
-        highlight={features2.highlight}
-        items={features2.items}
-      />
-    )
-  }
-
   <!-- FAQs Widget ******************* -->
 
   {
@@ -173,6 +160,20 @@ const meta = {
           </Content>
         )}
       </>
+    )
+  }
+
+  <!-- Features2 Widget ************** -->
+
+  {
+    features2 && features2.enabled && (
+      <Features2
+        columns={features2.columns}
+        title={features2.title}
+        subtitle={features2.subtitle}
+        highlight={features2.highlight}
+        items={features2.items}
+      />
     )
   }
 
