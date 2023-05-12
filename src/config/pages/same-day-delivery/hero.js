@@ -59,7 +59,7 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/spread-grid.jpg'),
+    src: import('~/assets/images/side-kick-1.jpg'),
     // Image alt text
     alt: 'Eltana bagels for delivery and paper bag',
   },

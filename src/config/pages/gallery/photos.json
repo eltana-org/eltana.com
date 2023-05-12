@@ -1,135 +1,184 @@
 [
   {
     "key": 0,
+    "alt": "bagel-grid.jpg",
+    "src": "/assets/gallery/bagel-grid.jpg",
+    "width": 3264,
+    "height": 2176
+  },
+  {
+    "key": 1,
+    "alt": "bagel-wrapped.jpg",
+    "src": "/assets/gallery/bagel-wrapped.jpg",
+    "width": 5184,
+    "height": 3456
+  },
+  {
+    "key": 2,
     "alt": "bagelrack.jpg",
     "src": "/assets/gallery/bagelrack.jpg",
     "width": 480,
     "height": 546
   },
   {
-    "key": 1,
+    "key": 3,
+    "alt": "bagels-portrait.jpg",
+    "src": "/assets/gallery/bagels-portrait.jpg",
+    "width": 2176,
+    "height": 3264
+  },
+  {
+    "key": 4,
     "alt": "bageltray.jpg",
     "src": "/assets/gallery/bageltray.jpg",
     "width": 640,
     "height": 480
   },
   {
-    "key": 2,
+    "key": 5,
     "alt": "baking.jpg",
     "src": "/assets/gallery/baking.jpg",
     "width": 640,
     "height": 480
   },
   {
-    "key": 3,
+    "key": 6,
     "alt": "batmankid.jpg",
     "src": "/assets/gallery/batmankid.jpg",
     "width": 480,
     "height": 640
   },
   {
-    "key": 4,
+    "key": 7,
     "alt": "berry-salad.jpg",
     "src": "/assets/gallery/berry-salad.jpg",
     "width": 608,
     "height": 405
   },
   {
-    "key": 5,
+    "key": 8,
     "alt": "caphillabove.jpg",
     "src": "/assets/gallery/caphillabove.jpg",
     "width": 640,
     "height": 480
   },
   {
-    "key": 6,
+    "key": 9,
     "alt": "caphillfire.jpg",
     "src": "/assets/gallery/caphillfire.jpg",
     "width": 640,
     "height": 480
   },
   {
-    "key": 7,
+    "key": 10,
     "alt": "caphilltable.jpg",
     "src": "/assets/gallery/caphilltable.jpg",
     "width": 426,
     "height": 640
   },
   {
-    "key": 8,
+    "key": 11,
     "alt": "capitol-hill.jpg",
     "src": "/assets/gallery/capitol-hill.jpg",
     "width": 4212,
     "height": 2808
   },
   {
-    "key": 9,
+    "key": 12,
     "alt": "counter.jpg",
     "src": "/assets/gallery/counter.jpg",
     "width": 640,
     "height": 426
   },
   {
-    "key": 10,
+    "key": 13,
     "alt": "counter2.jpg",
     "src": "/assets/gallery/counter2.jpg",
     "width": 640,
     "height": 426
   },
   {
-    "key": 11,
+    "key": 14,
     "alt": "design1.jpg",
     "src": "/assets/gallery/design1.jpg",
     "width": 879,
     "height": 542
   },
   {
-    "key": 12,
+    "key": 15,
     "alt": "design2.jpg",
     "src": "/assets/gallery/design2.jpg",
     "width": 509,
     "height": 700
   },
   {
-    "key": 13,
+    "key": 16,
     "alt": "design3.jpg",
     "src": "/assets/gallery/design3.jpg",
     "width": 879,
     "height": 575
   },
   {
-    "key": 14,
+    "key": 17,
     "alt": "dough.jpg",
     "src": "/assets/gallery/dough.jpg",
     "width": 640,
     "height": 480
   },
   {
-    "key": 15,
+    "key": 18,
     "alt": "intheracks.jpg",
     "src": "/assets/gallery/intheracks.jpg",
     "width": 640,
     "height": 426
   },
   {
-    "key": 16,
+    "key": 19,
+    "alt": "roll-it-forward.jpg",
+    "src": "/assets/gallery/roll-it-forward.jpg",
+    "width": 2448,
+    "height": 3264
+  },
+  {
+    "key": 20,
+    "alt": "side-kick-1.jpg",
+    "src": "/assets/gallery/side-kick-1.jpg",
+    "width": 5184,
+    "height": 3456
+  },
+  {
+    "key": 21,
+    "alt": "side-kick-2.jpg",
+    "src": "/assets/gallery/side-kick-2.jpg",
+    "width": 5184,
+    "height": 3456
+  },
+  {
+    "key": 22,
     "alt": "spreads-premium.jpg",
     "src": "/assets/gallery/spreads-premium.jpg",
     "width": 819,
     "height": 527
   },
   {
-    "key": 17,
+    "key": 23,
     "alt": "stoneway.jpg",
     "src": "/assets/gallery/stoneway.jpg",
     "width": 3558,
     "height": 2170
   },
   {
-    "key": 18,
+    "key": 24,
     "alt": "woodstack.jpg",
     "src": "/assets/gallery/woodstack.jpg",
     "width": 640,
     "height": 426
+  },
+  {
+    "key": 25,
+    "alt": "zaatar.png",
+    "src": "/assets/gallery/zaatar.png",
+    "width": 1080,
+    "height": 1080
   }
 ]
