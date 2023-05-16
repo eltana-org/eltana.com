@@ -22,6 +22,11 @@ const CONFIG = {
 
   // The website's preview image that is displayed when sharing the website on social media
   defaultImage: defaultImage,
+  // The default alt attribute for the preview image
+  defaultImageAlt: 'Default image',
+  // The default width and height of the preview image
+  defaultImageWidth: 896,
+  defaultImageHeight: 539,
 
   // Default site theme
   // Values: "system" | "light" | "dark" | "light:only" | "dark:only"

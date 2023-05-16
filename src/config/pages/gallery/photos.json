@@ -3,15 +3,15 @@
     "key": 0,
     "alt": "bagel-grid.jpg",
     "src": "/assets/gallery/bagel-grid.jpg",
-    "width": 3264,
-    "height": 2176
+    "width": 1306,
+    "height": 870
   },
   {
     "key": 1,
     "alt": "bagel-wrapped.jpg",
     "src": "/assets/gallery/bagel-wrapped.jpg",
-    "width": 5184,
-    "height": 3456
+    "width": 1296,
+    "height": 864
   },
   {
     "key": 2,
@@ -24,8 +24,8 @@
     "key": 3,
     "alt": "bagels-portrait.jpg",
     "src": "/assets/gallery/bagels-portrait.jpg",
-    "width": 2176,
-    "height": 3264
+    "width": 1088,
+    "height": 1632
   },
   {
     "key": 4,
@@ -136,22 +136,22 @@
     "key": 19,
     "alt": "roll-it-forward.jpg",
     "src": "/assets/gallery/roll-it-forward.jpg",
-    "width": 2448,
-    "height": 3264
+    "width": 1224,
+    "height": 1632
   },
   {
     "key": 20,
     "alt": "side-kick-1.jpg",
     "src": "/assets/gallery/side-kick-1.jpg",
-    "width": 5184,
-    "height": 3456
+    "width": 1918,
+    "height": 1279
   },
   {
     "key": 21,
     "alt": "side-kick-2.jpg",
     "src": "/assets/gallery/side-kick-2.jpg",
-    "width": 5184,
-    "height": 3456
+    "width": 1866,
+    "height": 1244
   },
   {
     "key": 22,
@@ -178,7 +178,7 @@
     "key": 25,
     "alt": "zaatar.png",
     "src": "/assets/gallery/zaatar.png",
-    "width": 1080,
-    "height": 1080
+    "width": 756,
+    "height": 756
   }
 ]
