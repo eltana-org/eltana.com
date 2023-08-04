@@ -10,21 +10,21 @@ const callToAction = {
   enabled: true,
 
   // The title of the call to action component
-  title: 'Looking to Schedule a Delivery or Pick-Up?',
+  title: 'Looking for Same Day Delivery?',
 
   // The subtitle of the call to action component (supports HTML)
-  subtitle: `Checkout our order page to schedule a delivery or pick-up for a later date. We support catering and bulk orders as well!`,
+  subtitle: `Checkout our same day delivery options through Postmates and Uber Eats.`,
 
   // Button configuration for the call to action component
   button: {
     // If the button should be displayed
     enabled: true,
     // The text of the button
-    text: 'Schedule a Delivery or Pick-Up',
+    text: 'Order Now',
     // The link of the button
-    href: getPermalink('/order'),
+    href: getPermalink('/same-day-delivery'),
     // The icon to the left of the button text
-    icon: 'tabler:truck-delivery',
+    icon: 'tabler:bolt',
     // HTML target attribute
     target: '_self',
     // HTML rel attribute

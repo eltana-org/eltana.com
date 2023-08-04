@@ -9,18 +9,18 @@ const hero = {
   enabled: true,
 
   // Custom CSS padding for the hero element
-  padding: 'pt-12 md:pt-20 pb-10',
+  padding: 'pt-12 md:pt-20 pb-5',
 
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
-    text: `<span class="font-bold">Groups and Delivery</span>`,
+    text: `<span class="font-bold">Same Day Delivery</span>`,
   },
 
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `Schedule a delivery or pick-up order`,
+    text: `Same day delivery is available from our Stone Way and Capitol Hill locations.`,
   },
 
   // First CTA block
@@ -59,9 +59,9 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/bagel-paper.jpg'),
+    src: import('~/assets/images/side-kick-1.jpg'),
     // Image alt text
-    alt: 'bagel on crossword paper',
+    alt: 'Eltana bagels for delivery and paper bag',
   },
 };
 
