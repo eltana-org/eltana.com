@@ -21,6 +21,15 @@ export default defineConfig({
   base: SITE.basePathname,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
+
+  // https://docs.astro.build/en/core-concepts/routing/#redirects
+  redirects: {
+    '/same-day-delivery': {
+      status: 301,
+      destination: '/order'
+    }
+  },
+
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
   },
