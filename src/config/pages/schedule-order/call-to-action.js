@@ -13,7 +13,7 @@ const callToAction = {
   title: 'Looking for Same Day Delivery?',
 
   // The subtitle of the call to action component (supports HTML)
-  subtitle: `Checkout our same day delivery options through Postmates and Uber Eats.`,
+  subtitle: `Check out our same day delivery page.`,
 
   // Button configuration for the call to action component
   button: {
@@ -22,7 +22,7 @@ const callToAction = {
     // The text of the button
     text: 'Order Now',
     // The link of the button
-    href: getPermalink('/same-day-delivery'),
+    href: getPermalink('/order'),
     // The icon to the left of the button text
     icon: 'tabler:bolt',
     // HTML target attribute

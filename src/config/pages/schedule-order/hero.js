@@ -14,7 +14,7 @@ const hero = {
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
-    text: `<span class="font-bold">Groups and Delivery</span>`,
+    text: `<span class="font-bold">Groups and Scheduled Delivery / Pick-up</span>`,
   },
 
   // Hero subtitle with HTML support
