@@ -26,8 +26,8 @@ export default defineConfig({
   redirects: {
     '/same-day-delivery': {
       status: 301,
-      destination: '/order'
-    }
+      destination: '/order',
+    },
   },
 
   markdown: {
