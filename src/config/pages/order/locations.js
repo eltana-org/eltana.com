@@ -2,7 +2,7 @@
 
 const locations = {
   // Show or hide the locations component
-  enabled: true,
+  enabled: false,
 
   // Small highlight text at the top of the component
   highlight: `Online`,
