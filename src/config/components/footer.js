@@ -14,7 +14,7 @@ const footerData = {
       links: [
         { text: 'Order', href: getPermalink('/order') },
         { text: 'Catering', href: getPermalink('/schedule-order') },
-        { text: 'Menu', href: getPermalink('/menu') }
+        { text: 'Menu', href: getPermalink('/menu') },
       ],
     },
     {
