@@ -14,13 +14,13 @@ const hero = {
   // Hero title with HTML support
   title: {
     enabled: true, // If the title should be enabled or not
-    text: `<span class="font-bold">Same Day Delivery</span>`,
+    text: `<span class="font-bold">Order Online</span>`,
   },
 
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `Same day delivery is available from our Stone Way and Capitol Hill locations.`,
+    text: `Get fresh bagels delivered to your door with same day delivery.`,
   },
 
   // First CTA block
