@@ -12,9 +12,9 @@ const footerData = {
       title: 'Order',
       // List of links to be displayed in the section
       links: [
-        { text: 'Catering', href: getPermalink('/order') },
-        { text: 'Menu', href: getPermalink('/menu') },
-        { text: 'Same Day Delivery', href: getPermalink('/same-day-delivery') },
+        { text: 'Order', href: getPermalink('/order') },
+        { text: 'Catering', href: getPermalink('/schedule-order') },
+        { text: 'Menu', href: getPermalink('/menu') }
       ],
     },
     {

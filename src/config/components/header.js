@@ -24,6 +24,14 @@ const headerData = {
       text: 'Pages',
       links: [
         {
+          text: 'Order',
+          href: getPermalink('/order'),
+        },
+        {
+          text: 'Catering',
+          href: getPermalink('/schedule-order'),
+        },
+        {
           text: 'About us',
           href: getPermalink('/about'),
         },
@@ -53,7 +61,7 @@ const headerData = {
       // text to display on the button
       text: 'Order',
       // link to go to when the button is clicked
-      href: getPermalink('/same-day-delivery'),
+      href: getPermalink('/order'),
       // can be 'button', 'primary', or 'ghost'
       type: 'button',
       // HTML rel attribute
