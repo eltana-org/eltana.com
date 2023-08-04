@@ -1,16 +1,17 @@
 ---
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
-import { Picture } from '@astrojs/image/components';
-// import { getPermalink } from '~/utils/permalinks';
+import { getPermalink } from '~/utils/permalinks';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
+import Locations from '~/components/widgets/Locations.jsx';
 
-import hero from '~/config/pages/order/hero';
-import callToAction from '~/config/pages/order/call-to-action';
-import neighborhoodDelivery from '~/config/pages/order/neighborhood-delivery';
+import hero from '~/config/pages/same-day-delivery/hero';
+import callToAction from '~/config/pages/same-day-delivery/call-to-action';
+import neighborhoodDelivery from '~/config/pages/same-day-delivery/neighborhood-delivery';
+import locations from '~/config/pages/same-day-delivery/locations';
 
 const meta = {
   title: SITE.title,
@@ -55,11 +56,12 @@ const meta = {
 
   <Block
     enabled={true}
-    backgroundCss={null}
-    title={'Place an Order Online'}
-    subtitle={'Schedule a pick-up or delivery'}
+    backgroundCss={'px-10 py-10'}
+    mainDivCss={'mb-10 md:mx-auto text-center md:mb-10 max-w-3xl'}
+    title={'DoorDash'}
+    subtitle={'DoorDash is the preferred method'}
     highlight={'Online'}
-    content={'For more information, please call 206-420-1293 between 7AM and 4PM, or email orders@eltana.com. All orders MUST be placed 24 hours in advance.'}
+    content={null}
     image={{
       enabled: false,
       src: null,
@@ -67,49 +69,35 @@ const meta = {
     }}
     callToAction={{
       enabled: true,
-      text: 'Delivery +24hr',
+      text: 'Order',
       href: 'https://order.online/business/eltana-31788/en-US',
       target: '_blank',
       rel: [],
-      icon: 'tabler:truck-delivery',
+      icon: 'tabler:bolt',
     }}
     callToAction2={{
-      enabled: true,
-      text: 'Pick-up +24hr',
-      href: 'https://eltana.formstack.com/forms/order',
-      target: '_blank',
+      enabled: false,
+      text: 'Scheduled +24hr',
+      href: getPermalink('/order'),
+      target: '_self',
       rel: [],
-      icon: 'tabler:briefcase',
+      icon: 'tabler:clock',
     }}
   />
 
-  <Block
-    enabled={true}
-    backgroundCss={'px-10 pt-10'}
-    mainDivCss={'mb-5 md:mx-auto text-center md:mb-5 max-w-3xl'}
-    title={'Catering Menu'}
-    subtitle={`Group Orders and Catering Menu`}
-    highlight={'Menu'}
-    content={null}
-  />
+  <!-- Locations Widget ****************** -->
 
-  <!-- Menu Images -->
-  <section class:list={`py-0`}>
-    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-      <Picture
-        class="mx-auto rounded-md w-full"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        aspectRatio={627 / 874}
-        loading="eager"
-        width={627}
-        height={874}
-        src={import('~/assets/images/groups-menu.jpg')}
-        alt="Eltana Group Ordering Menu"
-        fit={'contain'}
+  {
+    locations && locations.enabled && locations.locations.length > 0 && (
+      <Locations
+        client:only="react"
+        highlight={locations.highlight}
+        title={locations.title}
+        subtitle={locations.subtitle}
+        locations={locations.locations}
       />
-    </div>
-  </section>
+    )
+  }
 
   <!-- CallToAction Widget *********** -->
   {
