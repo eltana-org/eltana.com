@@ -15,7 +15,6 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
-import Locations from '~/components/widgets/Locations.jsx';
 
 import hero from '~/config/pages/home/hero';
 import content from '~/config/pages/home/content';
@@ -27,7 +26,6 @@ import features2 from '~/config/pages/home/features2';
 import callToAction from '~/config/components/call-to-action';
 import neighborhoodDelivery from '~/config/pages/home/neighborhood-delivery';
 import stats from '~/config/pages/home/stats';
-import locations from '~/config/pages/home/locations';
 
 const meta = {
   title: SITE.title,
@@ -176,32 +174,6 @@ const meta = {
 
   {stats && stats.enabled && <Stats items={stats.items} />}
 
-  <!-- Locations Widget ****************** -->
-
-  {
-    locations && locations.enabled && locations.locations.length > 0 && (
-      <Locations
-        client:only="react"
-        highlight={locations.highlight}
-        title={locations.title}
-        subtitle={locations.subtitle}
-        locations={locations.locations}
-      />
-    )
-  }
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  {
-    featuredPosts && featuredPosts.enabled && (
-      <LatestPosts
-        title={featuredPosts.title}
-        information={featuredPosts.information}
-        postIds={featuredPosts.postIds}
-      />
-    )
-  }
-
   <!-- Content Widget **************** -->
   {
     content && content.enabled && (
@@ -237,6 +209,48 @@ const meta = {
       </>
     )
   }
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  {
+    featuredPosts && featuredPosts.enabled && (
+      <LatestPosts
+        title={featuredPosts.title}
+        information={featuredPosts.information}
+        postIds={featuredPosts.postIds}
+      />
+    )
+  }
+
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={'Locations'}
+    subtitle={null}
+    highlight={null}
+    content={'We have two locations in Seattle for dine-in, takeout, and delivery. Our locations are open from 7am to 4pm daily.'}
+    image={{
+      enabled: false,
+      src: null,
+      alt: 'alt text here',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'View Locations',
+      href: getPermalink('/locations'),
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:building-store',
+    }}
+    callToAction2={{
+      enabled: false,
+      text: 'Button 2',
+      href: 'https://www.google.com',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:star',
+    }}
+  />
 
   <Block
     enabled={true}
@@ -305,4 +319,4 @@ const meta = {
       />
     </div>
   </section>
-</Layout>
+</Layout>~/config/pages/locations/locations

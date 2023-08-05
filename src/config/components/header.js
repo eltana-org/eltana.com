@@ -32,6 +32,10 @@ const headerData = {
           href: getPermalink('/schedule-order'),
         },
         {
+          text: 'Locations',
+          href: getPermalink('/locations'),
+        },
+        {
           text: 'About us',
           href: getPermalink('/about'),
         },
