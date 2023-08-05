@@ -15,7 +15,6 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
-import Locations from '~/components/widgets/Locations.jsx';
 
 import hero from '~/config/pages/home/hero';
 import content from '~/config/pages/home/content';
@@ -27,7 +26,6 @@ import features2 from '~/config/pages/home/features2';
 import callToAction from '~/config/components/call-to-action';
 import neighborhoodDelivery from '~/config/pages/home/neighborhood-delivery';
 import stats from '~/config/pages/home/stats';
-import locations from '~/config/pages/home/locations';
 
 const meta = {
   title: SITE.title,
@@ -176,20 +174,6 @@ const meta = {
 
   {stats && stats.enabled && <Stats items={stats.items} />}
 
-  <!-- Locations Widget ****************** -->
-
-  {
-    locations && locations.enabled && locations.locations.length > 0 && (
-      <Locations
-        client:only="react"
-        highlight={locations.highlight}
-        title={locations.title}
-        subtitle={locations.subtitle}
-        locations={locations.locations}
-      />
-    )
-  }
-
   <!-- HighlightedPosts Widget ******* -->
 
   {
@@ -305,4 +289,4 @@ const meta = {
       />
     </div>
   </section>
-</Layout>
+</Layout>~/config/pages/locations/locations
