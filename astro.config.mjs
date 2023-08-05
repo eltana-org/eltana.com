@@ -33,9 +33,6 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
   },
-  experimental: {
-    assets: true,
-  },
   integrations: [
     icon({
       include: {
