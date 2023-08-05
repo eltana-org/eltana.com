@@ -174,18 +174,6 @@ const meta = {
 
   {stats && stats.enabled && <Stats items={stats.items} />}
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  {
-    featuredPosts && featuredPosts.enabled && (
-      <LatestPosts
-        title={featuredPosts.title}
-        information={featuredPosts.information}
-        postIds={featuredPosts.postIds}
-      />
-    )
-  }
-
   <!-- Content Widget **************** -->
   {
     content && content.enabled && (
@@ -221,6 +209,48 @@ const meta = {
       </>
     )
   }
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  {
+    featuredPosts && featuredPosts.enabled && (
+      <LatestPosts
+        title={featuredPosts.title}
+        information={featuredPosts.information}
+        postIds={featuredPosts.postIds}
+      />
+    )
+  }
+
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={'Locations'}
+    subtitle={null}
+    highlight={null}
+    content={'We have two locations in Seattle for dine-in, takeout, and delivery. Our locations are open from 7am to 4pm daily.'}
+    image={{
+      enabled: false,
+      src: null,
+      alt: 'alt text here',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'View Locations',
+      href: getPermalink('/locations'),
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:building-store',
+    }}
+    callToAction2={{
+      enabled: false,
+      text: 'Button 2',
+      href: 'https://www.google.com',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:star',
+    }}
+  />
 
   <Block
     enabled={true}
