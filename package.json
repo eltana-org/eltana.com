@@ -30,7 +30,7 @@
     "@iconify-json/icon-park": "^1.1.11",
     "@iconify-json/mdi": "^1.1.52",
     "@iconify-json/ri": "^1.1.10",
-    "@iconify-json/tabler": "^1.1.80",
+    "@iconify-json/tabler": "^1.1.93",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.62.0",
