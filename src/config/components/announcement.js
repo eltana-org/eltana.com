@@ -2,13 +2,13 @@
 
 const announcement = {
   // If the announcement component should be enabled or not
-  enabled: false,
+  enabled: true,
 
   // Announcement text with HTML support
-  text: '🎄 View our updated <a href="/holiday-hours">holiday hours</a> 🎄',
+  text: '🎄 View our updated <a style="text-decoration:underline" href="/holiday-hours">holiday hours</a> 🎄',
 
-  // Warning level: "info" | "warning" | "error"
-  type: 'warning',
+  // Warning level: "info" | "warn" | "error"
+  type: 'error',
 };
 
 export default announcement;
