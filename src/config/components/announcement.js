@@ -5,7 +5,7 @@ const announcement = {
   enabled: false,
 
   // Announcement text with HTML support
-  text: 'View our updated <a href="/holiday-hours">holiday hours</a>',
+  text: '🎄 View our updated <a href="/holiday-hours">holiday hours</a> 🎄',
 
   // Warning level: "info" | "warning" | "error"
   type: 'warning',
