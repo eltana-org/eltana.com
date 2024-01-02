@@ -70,7 +70,7 @@ jobs:
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@e3193ac80e18917ceaeb9f2d47019ad3b2c0416a # pin@v0.3.0
+        uses: withastro/action@f122c0232093b3504e4c841a46c2eebd07c47392 # pin@v0.3.0
 
   # deploy to GitHub Pages
   deploy:
@@ -82,7 +82,7 @@ jobs:
       # deploy the site to GitHub Pages
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # pin@v2.0.4
+        uses: actions/deploy-pages@13b55b33dd8996121833dbc1db458c793a334630 # pin@v3.0.1
 
   # update the deployment result - manually complete the deployment that was created by the branch-deploy action
   result:
@@ -141,7 +141,7 @@ jobs:
       # if the deployment was successful, add a 'rocket' reaction to the comment that triggered the deployment
       - name: rocket reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: GrantBirki/comment@v2.0.6
+        uses: GrantBirki/comment@v2.0.8
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: rocket
@@ -149,7 +149,7 @@ jobs:
       # if the deployment failed, add a '-1' (thumbs down) reaction to the comment that triggered the deployment
       - name: failure reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: GrantBirki/comment@v2.0.6
+        uses: GrantBirki/comment@v2.0.8
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: "-1"
@@ -157,7 +157,7 @@ jobs:
       # if the deployment was successful, add a 'success' comment
       - name: success comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: peter-evans/create-or-update-comment@c6c9a1a66007646a28c153e2a8580a5bad27bcfa # pin@v3.0.2
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # pin@v3.1.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -170,7 +170,7 @@ jobs:
       # if the deployment was not successful, add a 'failure' comment
       - name: failure comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: peter-evans/create-or-update-comment@c6c9a1a66007646a28c153e2a8580a5bad27bcfa # pin@v3.0.2
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # pin@v3.1.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
