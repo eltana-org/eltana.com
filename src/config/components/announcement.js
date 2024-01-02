@@ -2,7 +2,7 @@
 
 const announcement = {
   // If the announcement component should be enabled or not
-  enabled: true,
+  enabled: false,
 
   // Announcement text with HTML support
   text: '🎄 View our updated <a style="text-decoration:underline" href="/holiday-hours">holiday hours</a> 🎄',
