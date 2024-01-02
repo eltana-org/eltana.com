@@ -5,10 +5,10 @@ const announcement = {
   enabled: false,
 
   // Announcement text with HTML support
-  text: 'This is an <b>announcement</b>',
+  text: '🎄 View our updated <a style="text-decoration:underline" href="/holiday-hours">holiday hours</a> 🎄',
 
-  // Warning level: "info" | "warning" | "error"
-  type: 'info',
+  // Warning level: "info" | "warn" | "error"
+  type: 'error',
 };
 
 export default announcement;
