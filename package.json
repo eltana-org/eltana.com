@@ -54,12 +54,12 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.3.2",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.14.19",
-    "@mui/material": "^5.14.4",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/material": "^5.15.2",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-photo-album": "^2.3.0"
