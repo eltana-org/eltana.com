@@ -17,7 +17,7 @@ jobs:
 
       - name: astro build cache
         id: astro-build-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .cache
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}

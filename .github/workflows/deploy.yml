@@ -27,7 +27,7 @@ jobs:
     steps:
       # https://github.com/github/branch-deploy/blob/d3c24bd92505e623615b75ffdfac5ed5259adbdb/docs/merge-commit-strategy.md
       - name: deployment check
-        uses: github/branch-deploy@v8
+        uses: github/branch-deploy@v9
         id: deployment-check
         with:
           merge_deploy_mode: "true"
@@ -43,13 +43,13 @@ jobs:
 
       - name: astro build cache
         id: astro-build-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .cache
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@f122c0232093b3504e4c841a46c2eebd07c47392 # pin@v1.0.3
+        uses: withastro/action@acfe56dffc635abfb9506c77d51ce097030360d1 # pin@v2.0.0
 
   deploy:
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
