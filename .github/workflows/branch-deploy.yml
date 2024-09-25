@@ -64,13 +64,13 @@ jobs:
 
       - name: astro build cache
         id: astro-build-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .cache
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@f122c0232093b3504e4c841a46c2eebd07c47392 # pin@v1.0.3
+        uses: withastro/action@9a7959a16949e620a22e74f81c10cb7ce3b76924 # pin@v1.0.6
 
   # deploy to GitHub Pages
   deploy:
@@ -157,7 +157,7 @@ jobs:
       # if the deployment was successful, add a 'success' comment
       - name: success comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # pin@v3.1.0
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -170,7 +170,7 @@ jobs:
       # if the deployment was not successful, add a 'failure' comment
       - name: failure comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # pin@v3.1.0
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
